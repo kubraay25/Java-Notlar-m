@@ -1,0 +1,15 @@
+t-> ifadesi lambda expression olarak ifade edilir.
+Lambda kullanirken ya method referance:: ya da lambda expression t-> kullanilir.
+removeif streamsz kullanilir.
+removeif kullaninca stream kullanamiyoruz.Ama removeifden liste stream yapip liste cevirebiliriz.
+//Bazen "stream()" methodu bize lazim olan methodlara ulasmamiza engel olur. Bu yüzden "stream()" methodunu kullanmayız
+"removeIf()" methodunda olduğu gibi.Fakat "stream()" methodunu daha sonradan kullanmamız gerekibilir.
+ Bu durumda "stream()" methodunu kullanarak istediğimizmethodlara ulasiriz, distinct() methoduna ulaştığımız gibi.
+ sonuc bize list olarak lazımsa "collect(Collectors.toList()" ile sonucu List'e ceviririz
+ //Lambda expression'yerine refernce :: kullanmanin bir sebebi de kendi methodumuzu Util class'dan cagirarak kullanmaktir
+ //UtilsClass tekrar tekrar kullanilacak methodlarda kullanilir tek sefer kullanilacak methodlarda kullanmamiza gerek yoktur.
+ //Lambda ile kod yazarken once Javanin bize verdigi methodlari method reference icinde kullanmamiz tavsiye edilir
+ //Eger method reference yetmiyorsa Util Class a koyup oradan kullaniriz
+ //Util tekrar tekrar kullanacagimiz methodlarda kullanilir.
+ //Surekli kullanmayacagimiz methodlar kullanilarak Util i kalabaliklastirmak iyi degildir
+ //Birseyi Util'e koydugumuzda bu herkesin isine yarayacak mi diye dusunmeliyiz!!

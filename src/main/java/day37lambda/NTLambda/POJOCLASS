@@ -1,0 +1,8 @@
+
+       POJO: Plain Old Java Object
+           1)Constructor without parameter
+           2)Constructor with all parameters
+           3)getter() and setter()
+           4)toString()
+4 sartin saglayan classlara Pojo class denir
+getter()+setter()=Java Beans
